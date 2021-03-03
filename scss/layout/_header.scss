@@ -1,0 +1,55 @@
+.header-principal{
+    display: block;
+    &.fijo{
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .4rem #444;
+    }
+}
+.contenedor-header-principal{
+    text-align: center;
+    padding: $separacion/2 0; /** 2.5rem 0 **/
+    @include tablet {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    @include desktop{
+        justify-content: space-between;
+    }
+    h1{
+        color: $blanco;
+    }
+}
+
+.nav-principal{
+    @include telefono-mini {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    @include tablet{
+        flex-direction: column;
+    }
+    @include desktop {
+        flex-direction: row;
+    }
+    a{ 
+        color: $blanco;
+        font-size: 2rem;
+        @include tablet{
+            margin: 1rem 0;
+        }
+        @include desktop{
+            margin: 0 2rem;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color: $amarillo;
+            }
+        }
+    }
+    
+}
+

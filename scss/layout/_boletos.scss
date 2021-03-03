@@ -1,0 +1,51 @@
+.boletos{
+    padding: $separacion 0;
+    margin-top: $separacion ;
+    margin-bottom: 0;
+    .contenedor-boletos{
+        @include tablet{
+            @include grid (2, 3rem);
+        }
+        .plan p{
+            color: $blanco;
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+    h3{
+        font-size: 3rem;
+        color: $blanco;
+        text-align: center;
+    }
+}
+
+table{
+    width: 100%;
+    border-spacing: 0;
+    thead{
+        background-color: $rosa;
+        th{
+            color: $blanco;
+            font-weight: $delgada;
+            padding: $separacion/3 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+    tbody{
+        background-color: $blanco;
+        td{
+            padding: $separacion/3 1rem;
+        }
+    }
+    tfoot{
+        background-color: $morado;
+        td{
+            color: $blanco;
+            padding: $separacion/3 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: $bold;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+$fuentePrincipal : 'Montserrat', sans-serif;
+
+// Colores
+$verde: #4CB8B3;
+$verdeFuerte: #3B9691; // Darken($verde, 10) color mas la intensidad lighten($verde, 10)
+$rosa: #F53756;
+$amarillo: #FEF46D;
+$amarilloFuerte: #FEF03A;
+$morado: #752F97;
+$negro: #000;
+$blanco: #FFF;
+
+
+// Media Queries
+$telefono-mini: 320px;
+$telefono: 414px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-big : 1350px;
+
+
+// Fuentes
+$delgada: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+// Separaciones
+$separacion: 5rem;

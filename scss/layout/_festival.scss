@@ -1,0 +1,35 @@
+.seccion-sobre-nosotros {
+    margin: $separacion auto ;
+    @include tablet {
+        @include grid(2, 4rem)
+    }
+    @include desktop {
+        align-items: center;
+    }
+    .imagen-sobre-nosotros{
+        text-align: center;
+    }
+}
+
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    h2{
+        margin-top: 2rem;
+        @include tablet{
+            margin-top: 0;
+        }
+    }
+    .fecha{
+        margin: 1rem 0;
+        color: $rosa;
+        font-size: 2rem;
+        font-weight: $bold;
+    }
+    .texto-lorem{
+        text-align: justify;
+        line-height: 3rem;
+        font-weight: $delgada;
+    }
+}

@@ -1,0 +1,89 @@
+.lineup{
+    background-color: $rosa;
+    padding: $separacion 0;
+    margin: $separacion auto;
+    h3{
+        color: $blanco;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .dia{
+        color: $blanco;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 5rem 0;
+    }
+}
+
+.escenarios-contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    @include tablet{
+        flex: unset;
+        @include grid (2, 3rem)
+    }
+    .escenario{
+        padding: $separacion/2 0;
+        .nombre-escenario{
+            text-align: center;
+            margin: 1rem 0;
+            &:after{
+                content: '';
+                width: 20rem;
+                height: 10rem;
+                display: block;
+                margin: 2rem auto 0 auto;
+                background-size: 15rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+    }
+}
+
+.rock .nombre-escenario{
+    &:after{
+        background-image: url(../build/img/icono_rock.png);
+    }
+}
+
+.edm .nombre-escenario{
+    &:after{
+        background-image: url(../build/img/icono_edm.png);
+    }
+}
+
+.calendario{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+        font-weight: $bold;
+        padding: $separacion/2;
+        font-size: 2rem;
+        span{
+            font-weight: $delgada;
+        }
+    }
+}
+
+.bg-amarillo{
+    .calendario{
+        li{
+            &:nth-child(odd){
+                background-color: $amarilloFuerte;
+            }
+        }
+    }
+}
+
+.bg-verde{
+    .calendario{
+        li{
+            &:nth-child(odd){
+                background-color: $verdeFuerte;
+            }
+        }
+    }
+}
